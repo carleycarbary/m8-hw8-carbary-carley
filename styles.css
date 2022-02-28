@@ -39,12 +39,44 @@
   header a {
     font-size: 1.5rem;
     color: var(--off-white);
+    
+  }
+  .link1:hover {
+    animation-name: Link1;
+    animation-duration: 4s;
+  }
+  @keyframes Link1{
+      0% {background-color: gray}   
+      25% {background-color: blue}
+      50% {background-color: black}
+      100% {background-color: white}  
+  }
+  .link2:hover {
+    animation-name: Link2;
+    animation-duration: 4s;
+  }
+  @keyframes Link2{
+      0% {background-color: gray}   
+      25% {background-color: blue}
+      50% {background-color: black}
+      100% {background-color: white}  
+  }
+  .link3:hover {
+    animation-name: Link3;
+    animation-duration: 4s;
+  }
+  @keyframes Link3{
+      0% {background-color: gray}   
+      25% {background-color: blue}
+      50% {background-color: black}
+      100% {background-color: white}  
   }
   /* end header link animations */
   
   /* article link transitions */
-  main a {
+  main a:hover{
     color: var(--danger-color);
+    transition: ease-out
   }
   /* end article link transitions */
   
@@ -92,6 +124,9 @@
     padding: 0 48px;
     margin: 0;
   }
+  .call-to-action:hover {
+  transform: translatex (-10px)
+}
   
   section.hero > button {
     background-color: var(--secondary-color);
@@ -101,6 +136,7 @@
     text-transform: uppercase;
     cursor: pointer;
   }
+
   
   main article {
     padding: 48px 96px;
