@@ -39,9 +39,8 @@
   header a {
     font-size: 1.5rem;
     color: var(--off-white);
-    
   }
-  .link1:hover {
+  #Link1:hover {
     animation-name: Link1;
     animation-duration: 4s;
   }
@@ -51,32 +50,32 @@
       50% {background-color: black}
       100% {background-color: white}  
   }
-  .link2:hover {
+  #Link2:hover {
     animation-name: Link2;
     animation-duration: 4s;
   }
   @keyframes Link2{
-      0% {background-color: gray}   
-      25% {background-color: blue}
-      50% {background-color: black}
+      0% {background-color: rgb(157, 38, 38)}   
+      25% {background-color: rgb(255, 0, 149)}
+      50% {background-color: rgb(0, 0, 0)}
       100% {background-color: white}  
   }
-  .link3:hover {
+  #Link3:hover {
     animation-name: Link3;
     animation-duration: 4s;
   }
   @keyframes Link3{
-      0% {background-color: gray}   
-      25% {background-color: blue}
-      50% {background-color: black}
-      100% {background-color: white}  
+      0% {background-color: rgb(128, 128, 128)}   
+      25% {background-color: rgb(0, 255, 162)}
+      50% {background-color: rgb(0, 0, 0)}
+      100% {background-color: rgb(255, 255, 255)}  
   }
   /* end header link animations */
   
   /* article link transitions */
   main a:hover{
     color: var(--danger-color);
-    transition: ease-out
+    transition: color ease-out 1s;
   }
   /* end article link transitions */
   
@@ -88,6 +87,7 @@
   
   nav {
     display: flex;
+    justify-content: space-between;
   }
   
   nav > a:not(:first-of-type){
@@ -124,9 +124,6 @@
     padding: 0 48px;
     margin: 0;
   }
-  .call-to-action:hover {
-  transform: translatex (-10px)
-}
   
   section.hero > button {
     background-color: var(--secondary-color);
@@ -135,6 +132,9 @@
     border-radius: 12px;
     text-transform: uppercase;
     cursor: pointer;
+  }
+  section.hero > button:hover {
+    transform: translateY(-20px)
   }
 
   
